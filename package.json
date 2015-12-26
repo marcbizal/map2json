@@ -1,0 +1,40 @@
+{
+  "name": "map2json",
+  "version": "1.0.0",
+  "description": "A command line conversion tool to convert binary .map files used in Lego Rock Raiders to a JSON format usable by Raiders.",
+  "scripts": {
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcbizal/map2json.git"
+  },
+  "keywords": [
+    "json",
+    "command-line",
+    "map",
+    "converter",
+    "Raiders"
+  ],
+  "author": "Marcus Bizal <marc.bizal@gmail.com>",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "map2json": "lib/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/marcbizal/map2json/issues"
+  },
+  "homepage": "https://github.com/marcbizal/map2json#readme",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13"
+  },
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "commander": "^2.9.0",
+    "core-js": "^2.0.0"
+  }
+}
