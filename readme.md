@@ -1,6 +1,8 @@
 # map2json
 A command line conversion tool written in Javascript with Node.js to convert binary .map files used in Lego Rock Raiders to a JSON format usable by [Raiders](https://github.com/marcbizal/Raiders).
 
+*Warning: `map2json` is in progress and will be available on npm very soon. For the time being please use [map2json-cpp](https://github.com/marcbizal/map2json-cpp)*
+
 ## Build Instructions
 To build `map2json`, please use the following commands:
 
@@ -26,4 +28,4 @@ Options:
   -c, --cfg [file]     path to game configuration file
 ```
 
-If the `--output` flag is not provided `map2json` will generate a file based on the folder name (i.e. `Level05.js`).
+If the `--output` flag is not provided `map2json` will generate a file based on the folder name (i.e. `Level05.json`).
